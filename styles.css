@@ -2,10 +2,10 @@
   --ink: #1f2937;
   --muted: #71808c;
   --line: #e2e8f0;
-  --paper: #f7f8fa;
+  --paper: #f5f5f7;
   --panel: #fff;
-  --accent: #ef6d5e;
-  --blue: #6f8dab;
+  --accent: #0a84ff;
+  --blue: #0a84ff;
   --shadow: 0 12px 30px rgba(31, 49, 66, .07);
   --font-text: "LXGW WenKai Screen", ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -96,7 +96,7 @@ main {
 
 .popular-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(10, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -131,9 +131,8 @@ main {
   display: grid;
   place-items: center;
   overflow: hidden;
-  border: 1px solid rgba(31, 49, 66, .1);
   border-radius: 4px;
-  background: #f1f5f9;
+  background: transparent;
 }
 
 .region-icon .fi {
@@ -156,7 +155,7 @@ main {
 
 .minor-grid {
   display: grid;
-  grid-template-columns: repeat(9, minmax(0, 1fr));
+  grid-template-columns: repeat(21, minmax(0, 1fr));
   gap: 6px;
 }
 
@@ -207,7 +206,7 @@ a:focus-visible {
   }
 
   .popular-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 6px;
   }
 
@@ -228,8 +227,8 @@ a:focus-visible {
   }
 
   .minor-grid {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: 5px;
+    grid-template-columns: repeat(15, minmax(0, 1fr));
+    gap: 4px;
   }
 
   .minor-chip {
@@ -241,32 +240,50 @@ a:focus-visible {
 
 @media (max-height: 560px) {
   .page-shell {
-    padding-top: 7px;
-    padding-bottom: 6px;
+    padding-top: 5px;
+    padding-bottom: 4px;
   }
 
   .site-header {
-    flex-basis: 32px;
+    flex-basis: 28px;
   }
 
   main {
-    padding-top: 5px;
+    padding-top: 3px;
+  }
+
+  .store-list {
+    gap: 4px;
+  }
+
+  .popular-grid,
+  .minor-grid {
+    gap: 4px;
   }
 
   .region-card {
-    height: 62px;
+    height: 50px;
+    padding: 3px;
+    gap: 2px;
   }
 
   .region-icon {
-    height: 24px;
+    width: 32px;
+    height: 20px;
   }
 
   .region-icon .fi {
-    height: 22px;
+    width: 30px;
+    height: 18px;
+  }
+
+  .region-name {
+    font-size: 10px;
   }
 
   .minor-chip {
-    height: 25px;
+    height: 20px;
+    font-size: 9px;
   }
 }
 
