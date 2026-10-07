@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f9" />
+    <meta name="description" content="选择地区，直接打开对应的 Apple App Store。" />
+    <title>App Store 地区跳转</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f06d5f'/%3E%3Cpath d='M8 22h4V10H8zm6 0h4V6h-4zm6 0h4V14h-4z' fill='white'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="App Store 地区跳转首页">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>store route</span>
+        </a>
+        <span class="header-note">APP STORE</span>
+      </header>
+
+      <main>
+        <h1>选择地区<br /><em>直接进入商店。</em></h1>
+
+        <section class="store-list" aria-label="App Store 地区列表">
+          <div class="list-heading">常用地区</div>
+          <div class="popular-grid">
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&cc=us" aria-label="打开美国 App Store">
+              <span class="region-icon" aria-hidden="true">🇺🇸</span><span class="region-name">美国</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&cc=cn" aria-label="打开中国大陆 App Store">
+              <span class="region-icon" aria-hidden="true">🇨🇳</span><span class="region-name">中国大陆</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&cc=hk" aria-label="打开中国香港 App Store">
+              <span class="region-icon" aria-hidden="true">🇭🇰</span><span class="region-name">中国香港</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&cc=tw" aria-label="打开中国台湾 App Store">
+              <span class="region-icon" aria-hidden="true">🇹🇼</span><span class="region-name">中国台湾</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&cc=jp" aria-label="打开日本 App Store">
+              <span class="region-icon" aria-hidden="true">🇯🇵</span><span class="region-name">日本</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&cc=kr" aria-label="打开韩国 App Store">
+              <span class="region-icon" aria-hidden="true">🇰🇷</span><span class="region-name">韩国</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143444&mt=8&cc=gb" aria-label="打开英国 App Store">
+              <span class="region-icon" aria-hidden="true">🇬🇧</span><span class="region-name">英国</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143455&mt=8&cc=ca" aria-label="打开加拿大 App Store">
+              <span class="region-icon" aria-hidden="true">🇨🇦</span><span class="region-name">加拿大</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143460&mt=8&cc=au" aria-label="打开澳大利亚 App Store">
+              <span class="region-icon" aria-hidden="true">🇦🇺</span><span class="region-name">澳大利亚</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="region-card" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&cc=sg" aria-label="打开新加坡 App Store">
+              <span class="region-icon" aria-hidden="true">🇸🇬</span><span class="region-name">新加坡</span><span class="region-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="list-heading other-heading">其他地区</div>
+          <div class="minor-grid" aria-label="其他地区">
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143459&mt=8&cc=at" title="奥地利">AT</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143446&mt=8&cc=be" title="比利时">BE</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143503&mt=8&cc=br" title="巴西">BR</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143459&mt=8&cc=ch" title="瑞士">CH</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143443&mt=8&cc=de" title="德国">DE</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143458&mt=8&cc=dk" title="丹麦">DK</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143454&mt=8&cc=es" title="西班牙">ES</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143447&mt=8&cc=fi" title="芬兰">FI</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143442&mt=8&cc=fr" title="法国">FR</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143449&mt=8&cc=ie" title="爱尔兰">IE</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143467&mt=8&cc=in" title="印度">IN</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143450&mt=8&cc=it" title="意大利">IT</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143468&mt=8&cc=mx" title="墨西哥">MX</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143473&mt=8&cc=my" title="马来西亚">MY</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143452&mt=8&cc=nl" title="荷兰">NL</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143457&mt=8&cc=no" title="挪威">NO</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143461&mt=8&cc=nz" title="新西兰">NZ</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143474&mt=8&cc=ph" title="菲律宾">PH</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143478&mt=8&cc=pl" title="波兰">PL</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143453&mt=8&cc=pt" title="葡萄牙">PT</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143469&mt=8&cc=ru" title="俄罗斯">RU</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143479&mt=8&cc=sa" title="沙特阿拉伯">SA</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143456&mt=8&cc=se" title="瑞典">SE</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143475&mt=8&cc=th" title="泰国">TH</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&cc=tr" title="土耳其">TR</a>
+            <a class="minor-chip" href="itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143476&mt=8&cc=vn" title="越南">VN</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">点击地区后直接跳转到对应商店</footer>
+    </div>
+  </body>
+</html>
