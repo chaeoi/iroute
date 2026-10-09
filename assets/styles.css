@@ -133,19 +133,17 @@ main {
   box-shadow: 0 1px 2px rgba(31, 49, 66, .12);
 }
 
-.region-tag {
-  position: absolute;
-  top: 2px;
-  right: 2px;
+.region-caption {
   display: none;
-  padding: 0 3px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, .92);
-  color: var(--ink);
-  font-size: 8px;
-  font-weight: 700;
-  line-height: 12px;
-  box-shadow: 0 1px 2px rgba(31, 49, 66, .18);
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .region-icon .fi {
@@ -226,7 +224,7 @@ a:focus-visible {
   .region-card {
     height: 70px;
     padding: 5px;
-    gap: 0;
+    gap: 2px;
   }
 
   .region-icon {
@@ -234,7 +232,7 @@ a:focus-visible {
     height: 39px;
   }
 
-  .region-tag {
+  .region-caption {
     display: block;
   }
 
@@ -329,7 +327,7 @@ a:focus-visible {
   .region-card {
     height: 48px;
     padding: 3px;
-    gap: 0;
+    gap: 1px;
   }
 
   .region-icon {
@@ -342,12 +340,8 @@ a:focus-visible {
     height: 22px;
   }
 
-  .region-tag {
-    top: 1px;
-    right: 1px;
-    padding: 0 2px;
-    font-size: 7px;
-    line-height: 10px;
+  .region-caption {
+    font-size: 8px;
   }
 
   .minor-chip {
