@@ -16,10 +16,10 @@ python3 -m http.server 8765
 index.html          页面和直达链接（64 个地区统一为国旗+汉字卡片）
 assets/styles.css   响应式布局与视觉样式（尺寸由 CSS 变量驱动）
 assets/app.js       按屏高计算国旗行数，放不下的行降级为缩写
-images/icon.svg     自制站点图标
+images/icon.svg     站点图标（simple-icons 的 App Store 字标 + iOS 风格渐变底）
 ```
 
-站点图标为自制 SVG：iOS 风格渐变圆角方块 + 白色线条地球，16–128px 均清晰，无运行时依赖。
+站点图标为 SVG：iOS 风格渐变圆角方块 + 白色 App Store 字标（取自 simple-icons，CC0），16–128px 均清晰，无运行时依赖。
 
 ## 响应式布局
 
