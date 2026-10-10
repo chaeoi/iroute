@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>图标候选预览</title>
+  <style>
+    body { margin: 0; padding: 24px; background: #f4f4f3; color: #27313a; font-family: ui-sans-serif, system-ui, "PingFang SC", sans-serif; }
+    h1 { font-size: 18px; margin: 0 0 4px; }
+    p { color: #69757e; font-size: 14px; margin: 0 0 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .card { background: #fff; border: 1px solid rgba(39,49,58,.1); border-radius: 12px; padding: 20px; text-align: center; }
+    .card img { vertical-align: middle; margin: 2px; border-radius: 22%; }
+    .sizes { margin: 14px 0 10px; }
+    .label { font-weight: 700; font-size: 15px; }
+    .desc { color: #69757e; font-size: 13px; margin-top: 4px; }
+    .tabbar { display: flex; gap: 12px; justify-content: center; align-items: center; background: #fff; border-radius: 12px; padding: 10px; margin-top: 20px; }
+    .tabbar img { width: 24px; border-radius: 24%; }
+    .tabbar span { font-size: 13px; color: #69757e; }
+  </style>
+</head>
+<body>
+  <h1>网页图标候选</h1>
+  <p>每个候选：128 / 48 / 32 / 16 px，以及页面顶部 24px 实际用法。</p>
+  <div class="grid">
+    <div class="card">
+      <div class="sizes"><img src="images/d1.svg" width="128"><img src="images/d1.svg" width="48"><img src="images/d1.svg" width="32"><img src="images/d1.svg" width="16"></div>
+      <div class="label">d1 · 地球 + 定位针</div>
+      <div class="desc">红针点在地球上，语义是「选地区」</div>
+      <div class="tabbar"><img src="images/d1.svg"><span>App Store</span></div>
+    </div>
+    <div class="card">
+      <div class="sizes"><img src="images/d2.svg" width="128"><img src="images/d2.svg" width="48"><img src="images/d2.svg" width="32"><img src="images/d2.svg" width="16"></div>
+      <div class="label">d2 · 纯地球</div>
+      <div class="desc">现款的精修版：线条更匀、球更大</div>
+      <div class="tabbar"><img src="images/d2.svg"><span>App Store</span></div>
+    </div>
+    <div class="card">
+      <div class="sizes"><img src="images/c3.svg" width="128"><img src="images/c3.svg" width="48"><img src="images/c3.svg" width="32"><img src="images/c3.svg" width="16"></div>
+      <div class="label">c3 · 细线地球</div>
+      <div class="desc">线条更细、留白更多，小尺寸略淡</div>
+      <div class="tabbar"><img src="images/c3.svg"><span>App Store</span></div>
+    </div>
+    <div class="card">
+      <div class="sizes"><img src="images/icon.svg" width="128"><img src="images/icon.svg" width="48"><img src="images/icon.svg" width="32"><img src="images/icon.svg" width="16"></div>
+      <div class="label">现款（对照）</div>
+      <div class="desc">当前线上版本</div>
+      <div class="tabbar"><img src="images/icon.svg"><span>App Store</span></div>
+    </div>
+  </div>
+</body>
+</html>
