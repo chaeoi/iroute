@@ -127,6 +127,7 @@ main {
 
 .region-icon {
   position: relative;
+  flex-shrink: 0;
   width: var(--flag-w);
   height: var(--flag-h);
   display: grid;
@@ -145,6 +146,7 @@ main {
 }
 
 .region-name {
+  flex-shrink: 0;
   max-width: 100%;
   overflow: hidden;
   color: var(--ink);
@@ -195,7 +197,9 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* 列数随屏宽变化，上限 8 列 */
+/* 列数随屏宽变化，上限 8 列；卡片高度需容下 内容 + padding + border，
+   否则 flex 会压缩国旗和文字（曾导致 12mini 上国旗压扁、文字截断）：
+   38(flag) + 4(gap) + 13(name) + 14(padding) + 2(border) = 71 → 72 */
 @media (max-width: 900px) {
   :root {
     --cols: 6;
@@ -218,7 +222,7 @@ a:focus-visible {
   :root {
     --cols: 4;
     --gap: 5px;
-    --card-h: 70px;
+    --card-h: 72px;
     --chip-h: 22px;
     --flag-w: 56px;
     --flag-h: 38px;
@@ -240,10 +244,11 @@ a:focus-visible {
   }
 }
 
-/* 矮屏：压缩卡片尺寸，让国旗能多显示几行 */
+/* 矮屏：压缩卡片尺寸，让国旗能多显示几行。
+   26(flag) + 4(gap) + 11(name) + 14(padding) + 2(border) = 57 → 58 */
 @media (max-height: 640px) {
   :root {
-    --card-h: 48px;
+    --card-h: 58px;
     --chip-h: 18px;
     --gap: 4px;
     --flag-w: 38px;
